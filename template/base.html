@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta>
+	<title>OAM-{{ nav }}</title>
+	<!--<link rel="stylesheet" href="{% static 'oam_portfolio/asset/styles/base.css' %}">-->
+	{% block cv %}
+	{% endblock %}
+
+	{% block profile %}
+	{% endblock %}
+
+	{% block ws %}
+	{% endblock %}
+
+	<style>
+		.footer-base{
+			border-top: 1px solid black;
+			margin-top: 60px;
+			padding:10px;
+		}
+
+		.head-base{
+			margin: 0px;
+		}
+
+		p.b-footer{
+			text-align: center;
+		}
+	</style>
+
+</head>
+
+<body>
+
+<nav>
+	{% block nav %}
+		<h1>{{ nav }}</h1>
+	{% endblock %}
+
+	<ul>
+		<li><a href="{% url 'cv-view' %}">HOME</a></li>
+		<li><a href="{% url 'detail-view' %}">DETAIL</a></li>
+		<li><a href="">WORKSHOP</a></li>
+	</ul>
+</nav>
+<head class="head-base">
+	<div class="container">
+
+		{% block cv-head %}
+		{% endblock %}
+	</div>
+
+</head>
+
+<main class="main-base">
+
+	<div class="container-fluid">
+		{% block cv-container %}
+		{% endblock %}
+
+		{% block profile-container %}
+		{% endblock %}
+
+		{% block ws-container %}
+		{% endblock %}
+	</div>
+
+</main>
+
+<footer class="footer-base">
+	<div class="footer-content">
+		<p class="b-footer">@2022 | Olakunle Alaba Michael | Website-Version ^1.0.0</p>
+	</div>
+
+</footer>
+
+</body>
+</html>

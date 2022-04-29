@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block cv %}
+<link rel="stylesheet" href="{% static 'oam_portfolio/asset/styles/cv.css' %}">
+{% endblock %}
+
+{% block cv-head %}
+<div class="cv-head-box">
+	<h2>THANKS FOR VIEWING</h2>
+	<p>Hello world, i'm Olakunle Michael. In need of a Computer programmer, who can set up a fast responsive project that integrates into any device. Then I am just one of the dude you are searching for.</p>
+	<a href="{% url 'detail-view' %}"><button>Detail</button></a>
+</div>
+
+{% endblock %}
+
+{% block cv-container %}
+<div class="cv-row cv-row-x">
+	<div class="cv-main">
+
+		<div class="cv-inside-content">
+			<div class="cv-col cv-col-head">
+				<h2>EXPERIENCE</h2>
+			</div>
+			<div class="cv-col cv-col-cont">
+				<h3>AUTODIDACT</h3>
+				<p>Software Developer</p>
+				<ul>
+					<li>Knowledge of DevOps development (Agile methodology).</li>
+					<li>Fundamental knowledge of software design, modelling and wireframe
+						with MS Visio.</li>
+					<li>Critical thinking on how to construct a software like an Engineer.</li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		<div class="cv-inside-content">
+			<div class="cv-col cv-col-head">
+				<h2>EDUCATION</h2>
+			</div>
+
+			<div class="cv-col cv-col-cont">
+
+				<div class="cv-ed-box">
+
+					<h3>MOZILLA DEVELOPER NETWORK (MDN web docs)</h3>
+					<p>Full-Stack Web development (Autodidact)</p>
+					<p><i>August 2021 - Infinity / Online web docs</i></p>
+					<ul>
+						<li>HTML - Structuring the Web.</li>
+						<li>CSS - Styling the Web.</li>
+						<li>JavaScript – Dynamic client-side scripting.</li>
+						<li>Server-side website programming</li>
+					</ul>
+				</div>
+
+				<div class="cv-ed-box">
+
+					<h3>OPENEDG (Open Education and Development Group)</h3>
+				<p>Edube Interactive</p>
+				<p><i>August 2019 – Infinity / Online Course</i></p>
+				<dl>
+					<dt>Python</dt>
+						<dd>Python Essentials - Part 1 (Basic)</dd>
+						<dd>Python Essentials - Part 2 (Intermediate)</dd>
+						<dd>Introduction to GUI Programming in Python (TkInter)</dd>
+						<dd>Advanced Perspective of Classes and Object-Oriented Programming in
+							Python</dd>
+						<dd>Working with RESTful APIs</dd>
+				</dl>
+
+				<dl>
+					<dt>JavaScript</dt>
+						<dd>JavaScript Essentials 1</dd>
+				</dl>
+				</div>
+
+				<div class="cv-ed-box">
+
+									<h3>FEDERAL COOPERATIVE COLLEGE ELEYELE IBADAN</h3>
+				<p>National / Higher National Diploma in Cooperative Economics and
+					Management</p>
+				<p><i>October 2014 – August 2019 / Ibadan, Nigeri</i></p>
+				<ul>
+					<li>ND/HND: Cooperative, Economics and Management</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+{% endblock %}
