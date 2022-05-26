@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 import os
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DJANGO_DEBUG' , '') !='False'
+DEBUG = False
 
 
 ALLOWED_HOSTS = ['oamportfolio.herokuapp.com','127.0.0.1']
