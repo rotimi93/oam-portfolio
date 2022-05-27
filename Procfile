@@ -1,1 +1,1 @@
-web: gunicorn oam.wsgi --log-file
+web: gunicorn oam.portfolio:app
